@@ -37,7 +37,7 @@ function open_embeddedform(form) {
  
     form_url += "&Signer 1_UserName=" + $("name").value;
     form_url += "&Signer 1_Email=" + $("email").value;
-	form_url += "&dob=" + $("dob").value;
+	form_url += "&cname=" + $("cname").value;
 	
 	
 
