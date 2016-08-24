@@ -33,7 +33,7 @@ function checkURL() {
 function open_embeddedform(form) {
 
    if($("type").value === "person") {
-   var form_url = "https://demo.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ebc65fb-7187-48cb-aa2c-256b81a632bb";
+   var form_url = "https://demo.docusign.net/member/PowerFormSigning.aspx?PowerFormId=2a4f79fb-4c5a-42af-8efe-05d5430935f8";
  
     form_url += "&Signer 1_UserName=" + $("name").value;
     form_url += "&Signer 1_Email=" + $("email").value;
@@ -44,13 +44,13 @@ $("powerform").innerHTML = '<iframe id="document" onload="checkURL();" src="' + 
     //$("powerform").innerHTML = '<iframe id="document" src="' + form_url + '" border="0"></iframe>';
 	}
 	else {
-	var form_url = 'https://demo.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=dcdf7170-e501-4b60-b10e-6ff1f4c395cc';
+	var form_url = 'https://demo.docusign.net/member/PowerFormSigning.aspx?PowerFormId=bae8e205-3570-4bd1-9d38-b1e3dddee484';
 	
     form_url += "&Signer 1_UserName=" + $("name").value;
     form_url += "&Signer 1_Email=" + $("email").value;
 	form_url += "&activateonly=1";
 	
-	 $("powerform").innerHTML = '<div style="display:none;">><iframe id="document" onload="checkURL();" src="' + form_url + '" border="0"></iframe></div><div></br></br></br></br></br></br></br></br><h2><font color="0079C1"><b>Thank you, your NDA has been sent to your E-mail</b></font></h2></br></br></br></br></br></br></br></br></br></br></div>';
+	 $("powerform").innerHTML = '<div style="display:none;">><iframe id="document" onload="checkURL();" src="' + form_url + '" border="0"></iframe></div><div></br></br></br></br></br></br></br></br><h2><font color="0079C1"><b>Thank you, your document has been sent to your E-mail</b></font></h2></br></br></br></br></br></br></br></br></br></br></div>';
 	 }
 }
 setInterval(check_messages, 200);
