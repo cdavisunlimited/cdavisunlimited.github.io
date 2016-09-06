@@ -2,7 +2,7 @@
 .clear {clear:both;}
 body {background-color:#EFEFEF; font-family:"Myriad Pro", Arial, Verdana; font-size:13px; word-spacing:3px;padding-bottom:30px;}
 
-#container { margin:0 auto; width:1213px; border-radius:0 0 10px 10px;border-style:solid;border-width:1px;border-color:#FCFDFD;
+#container { margin:0 auto; width:100%; border-radius:0 0 10px 10px;border-style:solid;border-width:1px;border-color:#FCFDFD;
 			/*-moz-box-shadow: -5px -5px 5px #CCC;
   			/*-moz-border-radius: 15px 0 0 0;
   			-webkit-box-shadow: -5px -5px 5px #CCC;
@@ -11,7 +11,7 @@ body {background-color:#EFEFEF; font-family:"Myriad Pro", Arial, Verdana; font-s
   			-webkit-box-shadow: 0px 0px 15px #CCC;
   			border-radius:10px;*/
   			}
-	#header {background: #FFCC00 url('') no-repeat; height: 0px; width:500px; border=radius:10px;}
+	#header {background: #FFCC00 url('') no-repeat; height: 0px; width:100%; border=radius:10px;}
 		#header h1 {font-size:24px; color:#fff;margin:13px 13px 0 13px;display:none;}
 		#header span {display:block; color:#c5d1a5; margin: 0px 13px 13px 13px;display:none;}
 		
@@ -22,7 +22,7 @@ body {background-color:#EFEFEF; font-family:"Myriad Pro", Arial, Verdana; font-s
 				#nav ul li a:hover { background:#FFCC00; -webkit-box-shadow:inset 0 0 4px #475817;}
 				#nav ul li a.current {background:#FFCC00; -webkit-box-shadow:inset 0 0 4px #475817;}
 				
-	#content {padding:0px 0px 0px 0px; -webkit-box-shadow: 0 -3px 3px #F5F5F5; background:; border-radius:0 0 0px 0px; -webkit-border-radius:0 0 0px 0px; -moz-border-radius:0 0 10px 10px; position:relative;top:-10px; margin-bottom:-10px; margin-top:105px; height: auto; width: 1213px;}
+	#content {padding:0px 0px 0px 0px; -webkit-box-shadow: 0 -3px 3px #F5F5F5; background:; border-radius:0 0 0px 0px; -webkit-border-radius:0 0 0px 0px; -moz-border-radius:0 0 10px 10px; position:relative;top:-10px; margin-bottom:-10px; margin-top:105px; margin-left:250px; margin-right:200px; height: auto; width: 1280px;}
 		#content h2 {font-size:20px; font-weight: normal; border-bottom: 2px solid #3B7BB8;margin-bottom:8px;}
 		#content h3 {font-size:18px; color:#42243E; font-weight:normal; }
 		#content p {font-size:13px;font-family:Arial, Verdana, Sans-serif; line-height: 21px;margin-bottom: 15px;}
@@ -48,6 +48,6 @@ body {background-color:#EFEFEF; font-family:"Myriad Pro", Arial, Verdana; font-s
 	
 	#powerform { width: auto; height: auto; padding:20px;20px;20px;20px;}
 	
-	#footer {clear:both; border-radius:5px; -webkit-border-radius:10px; -moz-border-radius:5px; color:#FEDB4D;padding:0px 0px 0px 0px;margin-top:13px; width: 850px;}
+	#footer {clear:both; border-radius:5px; -webkit-border-radius:10px; -moz-border-radius:5px; color:#FEDB4D;padding:0px 0px 0px 0px;margin-top:13px; width: 100%;}
 		#footer a {color:#000000;text-decoration:none;margin: 0px;}
 		#footer a:hover {text-decoration:underline;}

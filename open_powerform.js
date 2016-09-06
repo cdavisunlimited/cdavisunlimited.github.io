@@ -32,25 +32,14 @@ function checkURL() {
 
 function open_embeddedform(form) {
 
-   if($("type").value === "person") {
-   var form_url = "https://demo.docusign.net/member/PowerFormSigning.aspx?PowerFormId=2a4f79fb-4c5a-42af-8efe-05d5430935f8";
+   var form_url = "https://demo.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=00f9ee87-6486-4689-81e2-a67aed87bd53";
  
-    form_url += "&Signer 1_UserName=" + $("name").value;
-    form_url += "&Signer 1_Email=" + $("email").value;
-	
+    form_url += "&Parent_UserName=" + $("name").value;
+    form_url += "&Parent_Email=" + $("email").value;
 	
 
 $("powerform").innerHTML = '<iframe id="document" onload="checkURL();" src="' + form_url + '" border="0"></iframe>';
     //$("powerform").innerHTML = '<iframe id="document" src="' + form_url + '" border="0"></iframe>';
-	}
-	else {
-	var form_url = 'https://demo.docusign.net/member/PowerFormSigning.aspx?PowerFormId=bae8e205-3570-4bd1-9d38-b1e3dddee484';
-	
-    form_url += "&Signer 1_UserName=" + $("name").value;
-    form_url += "&Signer 1_Email=" + $("email").value;
-	form_url += "&activateonly=1";
-	
-	 $("powerform").innerHTML = '<div style="display:none;">><iframe id="document" onload="checkURL();" src="' + form_url + '" border="0"></iframe></div><div></br></br></br></br></br></br></br></br><h2><font color="0079C1"><b>Thank you, your document has been sent to your E-mail</b></font></h2></br></br></br></br></br></br></br></br></br></br></div>';
-	 }
+
 }
 setInterval(check_messages, 200);
