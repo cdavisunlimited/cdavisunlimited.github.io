@@ -29,6 +29,13 @@ function checkURL() {
 		}
 }
 
+function open_embeddedstep(form) {
+
+  //window.location.href(https://cdavisunlimited.github.io/second.html);
+  window.location.href(https://cdavisunlimited.github.io/second.html);
+
+}
+
 
 function open_embeddedform(form) {
 
