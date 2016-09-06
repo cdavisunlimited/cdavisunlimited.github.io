@@ -41,6 +41,8 @@ function open_embeddedform(form) {
 
    var form_url = "https://demo.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=00f9ee87-6486-4689-81e2-a67aed87bd53";
  
+ form_url += "&Student_UserName=Jill Lane";
+    form_url += "&Student_Email=cdavis.docusign2@outlook.com";
     form_url += "&Parent_UserName=" + $("name").value;
     form_url += "&Parent_Email=" + $("email").value;
 	
