@@ -37,7 +37,7 @@ function open_embeddedform(form) {
     form_url += "&Primary Member_UserName=Coleman Davis";
     form_url += "&Primary Member_Email=coleman.davis@docusign.com";
 	
-$("container").innerHTML = '<div id="header"><img style="width:1213px; height:150px;" src="https://cdavisunlimited.github.io/LZHeader3.jpg"></div><div id="nav"><div class="clear"></div></div><div id="content" style="background-image:none;"background-repeat: no-repeat; background-size: contain;"><div id="powerform" style="margin: 0 auto;"><form name="embedded_powerform" style="height:675px; width:1170px;"></form></div>';
+$("container").innerHTML = '<div id="header"><img style="width:1213px; height:150px;" src="https://cdavisunlimited.github.io/LZHeader3.jpg"></div><div id="nav"><div class="clear"></div></div><div id="content" style="background-image:none;"background-repeat: no-repeat; background-size: contain;"><div id="powerform" style="margin: 0 auto;"><form name="embedded_powerform" style="height:675px; width:1170px;"></form></div><div class="footer" style="align:left;"><img style="width:100%;" src="https://cdavisunlimited.github.io/LZFooter.jpg"></div>';
 $("powerform").innerHTML = '<iframe id="document" onload="checkURL();" src="' + form_url + '" border="0"></iframe>';
     //$("powerform").innerHTML = '<iframe id="document" src="' + form_url + '" border="0"></iframe>';
 	
