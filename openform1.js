@@ -33,11 +33,11 @@ function checkURL() {
 function open_embeddedform(form) {
 
    if($("type").value === "person") {
-   var form_url = "https://demo.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=cacee2ae-b35a-489a-88cf-34a4fdf8657f";
-    form_url += "&Student_UserName=" + $("name").value;
-    form_url += "&Student_Email=" + $("email").value;
-	form_url += "&CoSigner_UserName=" + $("cname").value;
-    form_url += "&CoSigner_Email=" + $("cemail").value;
+   var form_url = "https://demo.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8c1f0527-66da-4bbb-bac6-d74144350de4";
+    form_url += "&Buyer_UserName=" + $("name").value;
+    form_url += "&Buyer_Email=" + $("email").value;
+	form_url += "&Co-Buyer_UserName=" + $("cname").value;
+    form_url += "&Co-Buyer_Email=" + $("cemail").value;
 	
 
 $("powerform").innerHTML = '<iframe id="document" onload="checkURL();" src="' + form_url + '" border="0"></iframe>';
