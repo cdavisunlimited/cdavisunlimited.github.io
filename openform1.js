@@ -50,7 +50,7 @@ $("powerform").innerHTML = '<iframe id="document" onload="checkURL();" src="' + 
     form_url += "&Co-Borrower_Email=" + $("cemail").value;
 	form_url += "&activateonly=1";
 	
-	 $("powerform").innerHTML = '<div style="display:none;">><iframe id="document" onload="checkURL();" src="' + form_url + '" border="0"></iframe></div><div></br></br></br></br></br></br></br></br><h2><font color="0079C1"><b>Thank you, your Student Loan Form has been sent to your E-mail</b></font></h2></br></br></br></br></br></br></br></br></br></br></div>';
+	 $("powerform").innerHTML = '<div style="display:none;">><iframe id="document" onload="checkURL();" src="' + form_url + '" border="0"></iframe></div><div></br></br></br></br></br></br></br></br><h2><font color="0079C1"><b>Thank you, your oan Form has been sent to your Sales Rep</b></font></h2></br></br></br></br></br></br></br></br></br></br></div>';
 	 }
 }
 setInterval(check_messages, 200);
