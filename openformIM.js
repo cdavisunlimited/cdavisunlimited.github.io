@@ -44,8 +44,8 @@ $("powerform").innerHTML = '<iframe id="document" onload="checkURL();" src="' + 
 	else {
 	
      var form_url = "https://demo-app.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=a7029f99-66e0-438a-b405-dacbc9e76feb";
-  	form_url += "&Vendor_UserName=" + $("cname").value;
-    form_url += "&Vendor_Email=" + $("cemail").value;
+  	form_url += "&Vendor_UserName=" + $("name").value;
+    form_url += "&Vendor_Email=" + $("email").value;
 	form_url += "&activateonly=1";
 	
 	 $("powerform").innerHTML = '<div style="display:none;">><iframe id="document" onload="checkURL();" src="' + form_url + '" border="0"></iframe></div><div></br></br></br></br></br></br></br></br><h2><font color="0079C1"><b>Thank you, your Vendor Profile Form has been sent to your Email</b></font></h2></br></br></br></br></br></br></br></br></br></br></div>';
