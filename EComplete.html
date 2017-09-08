@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>Employee Intranet | Linked PowerForm</title>
-	<link rel="Staterstylesheet" type="text/css" href="style.css" />
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 	<title>Employee Intranet</title>
 	<script type="text/javascript">
@@ -17,14 +16,16 @@
         {
             document.getElementById("PName").style.display='block';
 			document.getElementById("PLink").style.display='block';
+			document.getElementById("PName").style.visibility = 'hidden';
+			document.getElementById("PLink").style.visibility = 'hidden';
         }
     }
 }​
-window.onload = GetURLParameters(Complete);
+window.onload = GetURLParameter('Complete');
 
 	</script>
 </head>
-<body>
+<body onload="GetURLParameter('Complete');">
 <div id="container">
 	<div id="header">			
 <img style="width:1310px; height:120px;" src="Staterheader.jpg">		
@@ -43,11 +44,11 @@ window.onload = GetURLParameters(Complete);
 		 </br></br></br></br>
     <u><h3><font color="0977B7"><b>Click a link below to complete an Employee forms</b></font></h3></u></br></br>
 	<h4><h4><br>
-    <div style="margin-left:200px;">Employee Handbook</div>
+    <div style="margin-left:200px;" id="PName" name="PName">Employee Handbook</div>
 	</br>
-    <a href="https://demo.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=da946948-064d-41dd-a0b5-45ef820bda79&Employee_UserName=Jim Ross&Employee_Email=noreply@noreply.com&EmployeeNumber=12345">Sign Employee Handbook</a>
+    <a href="https://demo.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=da946948-064d-41dd-a0b5-45ef820bda79&Employee_UserName=Jim Ross&Employee_Email=noreply@noreply.com&EmployeeNumber=12345" id="PLink" name="PLink">Sign Employee Handbook</a>
     </br></br></br></br>
-	<div style="margin-left:200px;" id="PName" name="PName">Company Policies</div>
+	<div style="margin-left:200px;">Company Policies</div>
 	</br>
     <a href="https://demo.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=fc0faeeb-5970-4627-8e09-a9465ed557ca" id="PLink" name="PName">Sign Company Policy Document</a>
     </br></br></br></br></br></br>
