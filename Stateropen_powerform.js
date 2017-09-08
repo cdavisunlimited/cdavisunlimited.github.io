@@ -56,13 +56,13 @@ $("powerform").innerHTML = '<iframe id="document" onload="checkURL();" src="' + 
 function first_form(form) {
 
    if($("name").value === "Jim Ross") {
-   window.location.replace("file:///C:/Users/coleman.davis/Desktop/Customer%20Docs/Stater%20Bros/FormJim.html");
+   window.location.replace("https://cdavisunlimited.github.io/EComplete.html");
 	
 
 	}
 	else {
 	
-    window.location.replace("file:///C:/Users/coleman.davis/Desktop/Customer%20Docs/Stater%20Bros/FormJill.html");
+    window.location.replace("https://cdavisunlimited.github.io/E Complete.html");
 	 }
 }
 setInterval(check_messages, 200);
