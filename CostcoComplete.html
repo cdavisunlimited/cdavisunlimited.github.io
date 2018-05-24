@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Costco Membership Renewal | Linked PowerForm</title>
+	<link rel="stylesheet" type="text/css" href="CostcoStyle.css" />
+	<script type="text/javascript" src="CostoPowerform.js"></script>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Membership Renewal</title>
+</head>
+<body>
+<div id="container">
+	<div id="header">			
+<img style="width:1213px; height:150px;" src="CostcoHeader.jpg">		
+	</div>
+	<div id="nav">
+		<div class="clear"></div>
+	</div>
+	<div id="content" style="background:#ffffff;">
+		<div id="powerform">
+		 <form name="embedded_powerform" action="open_embeddedform(this.form);">
+		 </br></br></br>
+    <u><h3><font color="0977B7"><b>Fill out the information below to complete you Membership Renewal</b></font></h3></u></br></br>
+	<h4><h4><br>
+    <div style="margin-left:200px;">Member Full Name</div>
+	</br>
+    <input type="text" border="1" style="width:150px;margin-left:200px;" maxlength="60" id="name" name="name"/>
+    </br></br></br></br>
+	<div style="margin-left:200px;">Member Email</div>
+	</br>
+    <input type="text" border="1" style="width:150px;margin-left:200px;" maxlength="60" id="email" name="email"/>
+	</br></br></br></br></br></br>
+<div style="margin-left:200px;">Membership Type</div>
+	 </br>
+	<select border="1" style="width:150px;margin-left:200px;" id="amount" name="amount">
+  <option value="60">Gold Star Member</option>
+  <option value="120">Gold Star Executive Member</option>
+</select>
+    </br></br></br></br></br></br>
+	<button style="margin-left:200px;" type="button" onclick="open_embeddedform(this.form);">Submit</button></br></br>
+</form>	
+  </div>
+	</div>
+<div class="footer" style="align:left;border-top:thin solid black;"><img style="width:100%;" src="CostcoFooter.jpg"></div>  	
+</div>
+</body>
+</html>
